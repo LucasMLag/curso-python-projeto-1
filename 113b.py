@@ -15,7 +15,7 @@ produtos = [
 ]
 
 novos_produtos = [
-    {**p, 'preco': round(p['preco'] * 1.1, 2)}
+    {**p, 'preco': round(p['preco'] * 1.1, 2)} 
     for p in copy.deepcopy(produtos)
 ]
 
