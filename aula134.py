@@ -25,7 +25,7 @@ caminho_arquivo = 'aula116.txt'
 # #
 # arquivo.close()
 
-with open(caminho_arquivo, 'w+') as arquivo:
+#with open(caminho_arquivo, 'w+') as arquivo:
 # with open(caminho_arquivo, 'w+') as arquivo:
 #     arquivo.write('Linha 1\n')
 #     arquivo.write('Linha 2\n')
@@ -74,4 +74,5 @@ with open(caminho_arquivo, 'w', encoding='utf8') as arquivo:
 
 print('#' * 10)
 
-with open(caminho_arquivo, 'r')
+with open(caminho_arquivo, 'r') as arquivo:
+    print(arquivo.read())
