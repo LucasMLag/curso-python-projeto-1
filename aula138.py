@@ -8,20 +8,12 @@
 # desfazer = [] -> Refazer ['caminhar', 'fazer café']
 # refazer = todo ['fazer café']
 # refazer = todo ['fazer café', 'caminhar']
+import os
 import json
 
 
-# with open('aula136.json','a',encoding='utf-8') as arquivo:
-#     print('nnnnnn')
-
-# e assim: hmm ai acho que n criaria o arquivo
-
-try:
-    with open('aula136.json','r',encoding='utf-8') as arquivo:
-        tarefas = json.load(arquivo)
- 
-except:
-    tarefas = []
+with open('aula136.json','r+',encoding='utf-8') as arquivo:
+    tarefas = json.load(arquivo)
 
 historico_tarefas = tarefas
 
